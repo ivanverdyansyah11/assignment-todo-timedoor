@@ -25,13 +25,44 @@ h1 {
     position: relative;
 }
 
-a {
+.card-todo {
+    border: 2px solid transparent;
+}
+
+.card-todo.active {
+    border: 2px solid black;
+}
+
+.wrapper-icon {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper-icon i {
+    color: red;
+}
+
+a.update-button,
+a.delete-button {
     position: absolute;
     font-weight: bold;
     text-decoration: none;
     color: white;
     bottom: 10px;
     left: 10px;
+}
+
+a.delete-button {
+    left: 76px !important;
 }
 
 a:hover {
