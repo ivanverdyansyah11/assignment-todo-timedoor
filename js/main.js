@@ -1,4 +1,4 @@
-// ARRAY OBJECT TODO LIST
+// ARRAY OBJECT ALL TODO LIST
 let todoList = [
     {
         id: 1,
