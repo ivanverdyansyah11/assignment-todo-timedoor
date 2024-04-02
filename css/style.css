@@ -1,36 +1,49 @@
-#input-form {
-    margin: 20px 340px 0px 340px;
-    /* margin: 20px 340px; */
+@font-face {
+    font-family: 'urbanist-regular';
+    src: url('../font/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-medium';
+    src: url('../font/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-semibold';
+    src: url('../font/Urbanist-SemiBold.ttf') format('truetype');
 }
 
 h1 {
     color: #212121;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    font-family: 'urbanist-semibold', Arial, Helvetica, sans-serif !important;
     margin-bottom: 12px;
 }
 
-#list-todo {
-    margin-top: 32px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#list-todo div{
-    margin: 10px 4px;
-    border-radius: 8px;
+.card-todo {
     padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
     background-color: #607EAA;
-    width: 200px;
     height: 180px;
     position: relative;
 }
 
-.card-todo {
-    border: 2px solid transparent;
-}
-
 .card-todo.active {
     border: 2px solid black;
+}
+
+.btn-sort {
+    width: fit-content;
+    overflow-x: auto;
+}
+
+.btn-group-sort {
+    width: 100%;
+}
+
+.btn-outline-primary {
+    text-wrap: nowrap;
 }
 
 .wrapper-icon {
@@ -59,6 +72,7 @@ a.delete-button {
     color: white;
     bottom: 10px;
     left: 10px;
+    font-family: 'urbanist-semibold', Arial, Helvetica, sans-serif !important;
 }
 
 a.delete-button {
@@ -82,4 +96,5 @@ p {
     border-radius: 15px;
     color: #A10035;
     font-weight: bolder;
+    font-family: 'urbanist-medium', Arial, Helvetica, sans-serif !important;
 }
